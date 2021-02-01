@@ -1,0 +1,22 @@
+{
+    "name": "keyboards-and-dice",
+    "version": "0.1.0",
+    "description": "",
+    "engines": {
+        "node": "14.x"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "node test.js"
+    },
+    "dependencies": {
+        "ejs": "^3.1.5",
+        "express": "^4.15.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kenneth-Siu/KeyboardsAndDice.git"
+    },
+    "license": "ISC"
+}
