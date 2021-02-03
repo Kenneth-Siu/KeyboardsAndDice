@@ -30,3 +30,8 @@ $large-container-width: 1008px;
         #{$property}: $large;
     }
 }
+
+@mixin container {
+    @include responsive(width, 100%, $medium-container-width, $large-container-width);
+    @include responsive (margin, 0, 0 auto);
+}
