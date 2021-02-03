@@ -8,8 +8,8 @@
     },
     "main": "index.js",
     "scripts": {
-        "dev": "gatsby develop",
-        "start": "gatsby build && gatsby serve",
+        "dev": "gatsby develop --open",
+        "start": "npm run build && npm run serve",
         "build": "gatsby build",
         "serve": "gatsby serve",
         "clean": "gatsby clean"
