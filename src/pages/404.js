@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import NavBar from "../components/navBar/NavBar";
+import NavBar from "../components/navBar/NavBar.js";
 import "../styles/404.scss";
 
 const NotFound = () => {

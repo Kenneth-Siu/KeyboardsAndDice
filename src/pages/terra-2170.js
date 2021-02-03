@@ -1,5 +1,5 @@
 import * as React from "react";
-import NavBar from "../components/navBar/NavBar";
+import NavBar from "../components/navBar/NavBar.js";
 import "../styles/terra-2170.scss";
 
 // markup
