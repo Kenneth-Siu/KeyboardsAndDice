@@ -9,7 +9,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "gatsby develop --open",
-        "start": "npm run build && npm run serve",
+        "start": "npm run build && npm run serve --open",
         "build": "gatsby build",
         "serve": "gatsby serve",
         "clean": "gatsby clean"

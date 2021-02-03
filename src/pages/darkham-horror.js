@@ -1,8 +1,7 @@
 import * as React from "react";
-import NavBar from "../components/navBar/NavBar.js";
+import NavBar from "../components/navBar/navBar.js";
 import "../styles/darkham-horror.scss";
 
-// markup
 const DarkhamHorror = () => {
     return (
         <main>
