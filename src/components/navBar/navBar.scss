@@ -4,11 +4,12 @@
 .nav-bar {
     background-color: $color-1;
     display: block;
-    height: 3rem;
+    @include responsive(height, 4rem, 3rem);
 
     ul {
         display: flex;
         @include container;
+        @include responsive(flex-wrap, wrap, nowrap);
     }
 
     li {
@@ -22,22 +23,23 @@
 
     .home {
         flex-grow: 1;
+        @include responsive(width, 100%, auto);
 
         a {
             color: $color-2;
             font-weight: 700;
             font-size: 1.2rem;
             height: 100%;
-            padding: 0.9rem 0;
+            @include responsive(padding, 0.5rem 0.5rem, 0.9rem 0.8rem);
         }
     }
 
     li:not(.home) a {
         position: relative;
         font-weight: 500;
-        font-size: 0.8rem;
         text-transform: uppercase;
-        padding: 1.1rem 1rem;
+        font-size: 0.8rem;
+        @include responsive(padding, 0.5rem 0.5rem, 1.1rem 0.8rem);
     }
 
     li.is-current-page a::after,
