@@ -1,15 +1,12 @@
 import * as React from "react";
-import NavBar from "../components/navBar/navBar.js";
+import Layout from "../components/layout/layout.js";
 import "../styles/darkham-horror.scss";
 
-const DarkhamHorror = () => {
+export default function DarkhamHorror() {
     return (
-        <main>
+        <Layout>
             <title>Darkham Horror</title>
-            <NavBar />
             <h1>Darkham Horror</h1>
-        </main>
+        </Layout>
     );
-};
-
-export default DarkhamHorror;
+}

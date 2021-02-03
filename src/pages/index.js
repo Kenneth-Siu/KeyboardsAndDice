@@ -1,15 +1,12 @@
 import * as React from "react";
-import NavBar from "../components/navBar/navBar.js";
+import Layout from "../components/layout/layout.js";
 import "../styles/index.scss";
 
-const Index = () => {
+export default function Index() {
     return (
-        <main>
+        <Layout>
             <title>Keyboards and Dice</title>
-            <NavBar />
             <h1>Hello!</h1>
-        </main>
+        </Layout>
     );
-};
-
-export default Index;
+}

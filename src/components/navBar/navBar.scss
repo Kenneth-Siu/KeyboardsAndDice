@@ -1,0 +1,48 @@
+@import "../colors.scss";
+@import "../layout/responsive.scss";
+
+.nav-bar {
+    background-color: $color-1;
+    display: block;
+    height: 3rem;
+
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        padding: 1.1rem 1rem;
+    }
+
+    ul {
+        display: flex;
+        @include responsive(width, 100%, $medium-container-width, $large-container-width);
+        @include responsive(margin, 0, 0 auto);
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    .home {
+        flex-grow: 1;
+
+        a {
+            color: $color-2;
+            text-transform: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            height: 100%;
+            padding: 0.9rem 0;
+        }
+    }
+
+    .terra-2170 a {
+        color: $color-3;
+    }
+
+    .darkham-horror a {
+        color: $color-4;
+    }
+}

@@ -1,13 +1,12 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import NavBar from "../components/navBar/navBar.js";
+import Layout from "../components/layout/layout.js";
 import "../styles/404.scss";
 
-const NotFound = () => {
+export default function NotFound() {
     return (
-        <main>
+        <Layout>
             <title>Page not found...</title>
-            <NavBar />
             <h1>Page not found...</h1>
             <p>
                 Sorry{" "}
@@ -17,8 +16,6 @@ const NotFound = () => {
                 we couldn’t find what you were looking for.{" "}
                 <Link to="/">Go home</Link>.
             </p>
-        </main>
+        </Layout>
     );
-};
-
-export default NotFound;
+}

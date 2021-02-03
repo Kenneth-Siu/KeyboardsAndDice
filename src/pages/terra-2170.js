@@ -1,15 +1,12 @@
 import * as React from "react";
-import NavBar from "../components/navBar/navBar.js";
+import Layout from "../components/layout/layout.js";
 import "../styles/terra-2170.scss";
 
-const Terra2170 = () => {
+export default function Terra2170() {
     return (
-        <main>
+        <Layout>
             <title>Terra 2170</title>
-            <NavBar />
             <h1>Terra 2170</h1>
-        </main>
+        </Layout>
     );
-};
-
-export default Terra2170;
+}
