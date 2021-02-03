@@ -6,7 +6,9 @@ export default function DarkhamHorror({ location }) {
     return (
         <Layout location={location}>
             <title>Darkham Horror</title>
-            <h1>Darkham Horror</h1>
+            <main>
+                <h1>Darkham Horror</h1>
+            </main>
         </Layout>
     );
 }

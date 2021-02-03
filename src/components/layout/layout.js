@@ -7,7 +7,7 @@ export default function Layout({ children, location }) {
     return (
         <>
             <NavBar location={location} />
-            <main className="container">{children}</main>
+            {children}
         </>
     );
 }

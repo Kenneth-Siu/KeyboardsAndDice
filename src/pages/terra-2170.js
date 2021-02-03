@@ -6,7 +6,9 @@ export default function Terra2170({ location }) {
     return (
         <Layout location={location}>
             <title>Terra 2170</title>
-            <h1>Terra 2170</h1>
+            <main>
+                <h1>Terra 2170</h1>
+            </main>
         </Layout>
     );
 }
