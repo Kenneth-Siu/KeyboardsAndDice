@@ -3,10 +3,10 @@ import NavBar from "../navBar/navBar.js";
 import "./cssreset.css";
 import "./layout.scss";
 
-export default function Layout({ children }) {
+export default function Layout({ children, location }) {
     return (
         <>
-            <NavBar />
+            <NavBar location={location} />
             <main className="container">{children}</main>
         </>
     );

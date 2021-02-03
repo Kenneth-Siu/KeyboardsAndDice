@@ -6,14 +6,6 @@
     display: block;
     height: 3rem;
 
-    a {
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        padding: 1.1rem 1rem;
-    }
-
     ul {
         display: flex;
         @include responsive(width, 100%, $medium-container-width, $large-container-width);
@@ -25,12 +17,15 @@
         align-items: center;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .home {
         flex-grow: 1;
 
         a {
             color: $color-2;
-            text-transform: none;
             font-weight: 700;
             font-size: 1.2rem;
             height: 100%;
@@ -38,11 +33,39 @@
         }
     }
 
+    li:not(.home) a {
+        position: relative;
+        font-weight: 500;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        padding: 1.1rem 1rem;
+    }
+
+    li.is-current-page a::after,
+    li:not(.home) a:hover::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-3px);
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+    }
+
     .terra-2170 a {
         color: $color-3;
+
+        &::after {
+            border-bottom-color: $color-3;
+        }
     }
 
     .darkham-horror a {
         color: $color-4;
+
+        &::after {
+            border-bottom-color: $color-4;
+        }
     }
 }
