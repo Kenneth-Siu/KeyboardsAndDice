@@ -1,10 +1,16 @@
 @import "../colors.scss";
 @import "../layout/responsive.scss";
 
+$navbar-small-height: 4rem;
+$navbar-medium-height: 3rem;
+$navbar-large-height: 3rem;
+
 .nav-bar {
     background-color: $color-1;
     display: block;
-    @include responsive(height, 4rem, 3rem);
+    position: fixed;
+    width: 100%;
+    @include responsive(height, $navbar-small-height, $navbar-medium-height, $navbar-large-height);
 
     ul {
         display: flex;

@@ -1,3 +1,37 @@
-.index-header {
-    color: red;
+@import "../components/colors.scss";
+@import "../components/layout/responsive.scss";
+@import "../components/navBar/navBar.scss";
+
+.index-page {
+    display: flex;
+    height: 100vh;
+    @include responsive(padding-top, $navbar-small-height, $navbar-medium-height, $navbar-large-height);
+
+    > div {
+        flex-grow: 1;
+        position: relative;
+        background-color: black;
+    }
+
+    .splash {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .splashImage {
+            margin: -4px;
+            height: calc(100% + 8px);
+            opacity: 0.4;
+    
+            img {
+                filter: blur(4px);
+            }
+        }
+    }
+
+    .content {
+        position: absolute;
+        color: $color-2;
+    }
 }
