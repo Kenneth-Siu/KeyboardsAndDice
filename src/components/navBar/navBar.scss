@@ -5,6 +5,10 @@ $navbar-small-height: 4rem;
 $navbar-medium-height: 3rem;
 $navbar-large-height: 3rem;
 
+@mixin navBarPageTopPadding {
+    @include responsive(padding-top, $navbar-small-height, $navbar-medium-height, $navbar-large-height);
+}
+
 .nav-bar {
     z-index: 100;
     background-color: $color-1;

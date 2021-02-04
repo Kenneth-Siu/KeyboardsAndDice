@@ -5,9 +5,9 @@
 .index-page {
     position: relative;
     display: flex;
+    @include navBarPageTopPadding;
     @include responsive(flex-wrap, wrap, nowrap);
     @include responsive(height, auto, 100vh);
-    @include responsive(padding-top, $navbar-small-height, $navbar-medium-height, $navbar-large-height);
 
     .tile {
         @include responsive(min-height, calc((100vh - 4rem) / 2), auto);
@@ -29,10 +29,9 @@
         .splashImage {
             margin: -6px;
             height: calc(100% + 12px);
-            opacity: 0.4;
 
             img {
-                filter: blur(4px);
+                filter: blur(4px) brightness(0.4);
             }
         }
     }
