@@ -1,5 +1,5 @@
 @import "../components/colors.scss";
-@import "../components/layout/responsive.scss";
+@import "../components/responsive.scss";
 @import "../components/navBar/navBar.scss";
 
 .index-page {
@@ -11,6 +11,8 @@
         flex-grow: 1;
         position: relative;
         background-color: black;
+        display: flex;
+        align-items: center;
     }
 
     .splash {
@@ -20,10 +22,10 @@
         overflow: hidden;
 
         .splashImage {
-            margin: -4px;
-            height: calc(100% + 8px);
+            margin: -6px;
+            height: calc(100% + 12px);
             opacity: 0.4;
-    
+
             img {
                 filter: blur(4px);
             }
@@ -32,6 +34,68 @@
 
     .content {
         position: absolute;
-        color: $color-2;
+        margin: 10rem;
+        line-height: 1.2;
+
+        h1 {
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        p {
+            font-style: italic;
+            font-weight: 200;
+            margin-bottom: 0.5rem;
+
+            &.link {
+                margin-top: 1.2rem;
+            }
+
+            em {
+                font-style: normal;
+            }
+
+            a {
+                font-style: normal;
+                font-weight: 600;
+                text-decoration: none;
+                padding: 0.3rem;
+            }
+        }
+    }
+
+    .terra {
+        color: $color-3;
+
+        a {
+            color: $color-3;
+        }
+
+        p a:hover {
+            background-color: $color-3;
+            color: $color-1;
+        }
+    }
+
+    .darkham {
+        color: $color-4;
+
+        a {
+            color: $color-4;
+        }
+
+        p a:hover {
+            background-color: $color-4;
+            color: $color-1;
+        }
     }
 }
