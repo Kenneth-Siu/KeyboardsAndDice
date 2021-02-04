@@ -3,12 +3,17 @@
 @import "../components/navBar/navBar.scss";
 
 .index-page {
+    position: relative;
     display: flex;
-    height: 100vh;
+    @include responsive(flex-wrap, wrap, nowrap);
+    @include responsive(height, auto, 100vh);
     @include responsive(padding-top, $navbar-small-height, $navbar-medium-height, $navbar-large-height);
 
-    > div {
+    .tile {
+        @include responsive(min-height, calc((100vh - 4rem) / 2), auto);
+        @include responsive(width, 100vw, auto);
         flex-grow: 1;
+        justify-content: center;
         position: relative;
         background-color: black;
         display: flex;
@@ -33,8 +38,9 @@
     }
 
     .content {
-        position: absolute;
-        margin: 10rem;
+        position: relative;
+        max-width: 480px;
+        margin: 1.5rem;
         line-height: 1.2;
 
         h1 {

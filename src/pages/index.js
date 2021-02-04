@@ -10,7 +10,8 @@ export default function Index({ location }) {
         <Layout location={location}>
             <title>Keyboards and Dice</title>
             <main className="index-page">
-                <div className="terra">
+
+                <div className="terra tile">
                     <div className="splash">
                         <TerraSplash className="splashImage" />
                     </div>
@@ -32,7 +33,7 @@ export default function Index({ location }) {
                     </div>
                 </div>
 
-                <div className="darkham">
+                <div className="darkham tile">
                     <div className="splash">
                         <DarkhamSplash className="splashImage" />
                     </div>
@@ -53,6 +54,7 @@ export default function Index({ location }) {
                         </p>
                     </div>
                 </div>
+                
             </main>
         </Layout>
     );

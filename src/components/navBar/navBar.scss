@@ -6,6 +6,7 @@ $navbar-medium-height: 3rem;
 $navbar-large-height: 3rem;
 
 .nav-bar {
+    z-index: 100;
     background-color: $color-1;
     display: block;
     position: fixed;
